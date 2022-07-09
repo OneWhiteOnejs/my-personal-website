@@ -2,131 +2,113 @@
 <html lang="tr">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>İletişim</title>
-
-  <link rel="stylesheet" href="style.css">
-  <link rel="shortcut icon" href="img/message.svg">
-  <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İletişim</title>
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/message.svg">
 </head>
 
 <body>
-  <div class="container arkaplaniletisim ">
-    <div class="navbar">
+    <div class="container arkaplaniletisim ">
+        <div class="navbar">
 
 
-      <div class="iconbirlestirici">
-        <img src="img/airtable.svg" alt="airtable" clas="allienico" />
-
-        <br />
-        <br />
-        <div class="icons">
-          <a href="anasayfa.html" class="iconkutu">
-            <div class="x">
-              <img src="img/power.svg" alt="power" class="powerico" />
-              <span>Anasayfa</span>
+          <div class="iconbirlestirici">
+            <img src="img/airtable.svg" alt="airtable" clas="allienico" />
+  
+            <br />
+            <br />
+            <div class="icons">
+              <a href="anasayfa.html" class="iconkutu">
+                <div class="x">
+                  <img src="img/power.svg" alt="power" class="powerico" />
+                  <span>Anasayfa</span>
+                </div>
+              </a>
+              <br />
+              <a href="playlist.html" class="iconkutu">
+                <div class="x">
+                  <img
+                    src="img/playlist.svg"
+                    alt="playlist"
+                    class="playlistico"
+                  />
+                  <span>Playlist</span>
+                </div>
+              </a>
+              <br />
+              <a href="projeler.html" class="iconkutu">
+                <div class="x">
+                  <img
+                    src="img/projeler.svg"
+                    alt="projeler"
+                    class="projelerico"
+                  />
+                  <span>Projeler</span>
+                </div>
+              </a>
+             
+      
+  
+             
+             <br>
+              <a href="iletisim.html" class="iconkutu">
+                <div class="x">
+                  <img src="img/message.svg" alt="message" class="messageico" />
+                  <span>İletişim</span>
+                </div>
+              </a>
             </div>
-          </a>
-          <br />
-          <a href="playlist.html" class="iconkutu">
-            <div class="x">
-              <img src="img/playlist.svg" alt="playlist" class="playlistico" />
-              <span>Playlist</span>
-            </div>
-          </a>
-          <br />
-          <a href="projeler.html" class="iconkutu">
-            <div class="x">
-              <img src="img/projeler.svg" alt="projeler" class="projelerico" />
-              <span>Projeler</span>
-            </div>
-          </a>
-
-          <br />
-
-          <a href="hedefler.html" class="iconkutu">
-            <div class="x">
-              <img src="img/hedefler.svg" alt="hedefler" class="hedeflerico" />
-              <span>Hedefler</span>
-            </div>
-          </a>
-          <br>
-          <a href="iletisim.html" class="iconkutu">
-            <div class="x">
-              <img src="img/message.svg" alt="message" class="messageico" />
-              <span>İletişim</span>
-            </div>
-          </a>
+          </div>
         </div>
-      </div>
+        <div class="mainiletisim">
+           <div class="iletisimguncelleme">
+            <form action="#">
+                <div class="form-control">
+                  <input type="text" required />
+                  <label for="#">İsminiz ve Soyisminiz</label>
+                </div>
+                <div class="form-control">
+                  <input type="email" required />
+                  <label for="#">Emailiniz</label>
+                </div>
+                <div class="form-control">
+                  <textarea cols="30" rows="5" required></textarea>
+                  <label for="#" class="mesajiniz">Mesajınız</label>
+                </div>
+                <div class="form-control">
+                  <input type="submit" value="Gönder" />
+                </div>
+              </form>
+              <div class="iletisimlogolar"> 
+             <a href="https://www.instagram.com/onewhite0ne/" class="logoyer" target="_blank" >
+              <img src="img/instagram.svg" alt="" id="ilig">
+             </a>
+
+             <a href="https://discord.com/users/856934407649624064" class="logoyer" target="_blank" >
+              <img src="img/discord.svg" alt="" id="ildc">
+             </a>
+
+             <a href="https://github.com/OneWhiteOnejs" class="logoyer" target="_blank" >
+              <img src="img/github.svg" alt="" id="ilgh">
+             </a>
+              </div>
+            </div>
+             </div>
+             </div>
     </div>
-    <div class="mainiletisim">
 
-      <form action="#">
-        <div class="form-control">
-          <input type="text" required />
-          <label for="#">İsminiz ve Soyisminiz</label>
-        </div>
-        <div class="form-control">
-          <input type="email" required />
-          <label for="#">Emailiniz</label>
-        </div>
-        <div class="form-control">
-          <textarea cols="30" rows="5" required></textarea>
-          <label for="#" class="mesajiniz">Mesajınız</label>
-        </div>
-        <div class="form-control">
-          <input type="submit" value="Gönder" onclick="sendMail()" />
-        </div>
-      </form>
-
-      <input type="button" value="Gönder" onclick="sendEmail()" />
-      <div class="iletisimlogolar">
-        <a href="https://www.instagram.com" class="logoyer" target="_blank">
-          <img src="img/instagram.svg" alt="" id="ilig">
-        </a>
-
-        <a href="https://www.discordapp.com" class="logoyer" target="_blank">
-          <img src="img/discord.svg" alt="" id="ildc">
-        </a>
-
-        <a href="https://www.github.com" class="logoyer" target="_blank">
-          <img src="img/github.svg" alt="" id="ilgh">
-        </a>
-      </div>
-
-    </div>
-  </div>
-  </div>
-
-  <script>
-
-    function topFunction() {
-      document.body.scrollTop = 0;
-      document.documentElement.scrollTop = 0;
-    }
-
-    function sendEmail() {
-      Email.send({
-        SecureToken: "C973D7AD-F097-4B95-91F4-40ABC5567812",
-        Host: "smtp.mailtrap.io",
-        Username: "s",
-        Password: "s",
-        To: 'selimhamzaogullari@hotmail.com',
-        From: "selimhamzaogullari@gmail.com",
-        Subject: "asdasd",
-        Body: "<html><h2>Header</h2><strong>Bold text</strong><br></br><em>Italic</em></html>"
-      }).then(
-        message => alert(message)
-      ).error(
-        message => alert(message)
-      );
-    }
-
-
-  </script>
+    <script>
+      
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+        </script>
 </body>
 
 </html>
+
