@@ -1,0 +1,223 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+.navbar {
+  background-color: #252525;
+  min-height: 100vh;
+  min-width: 100px;
+  width: 100px;
+  position: fixed;
+  transition: width 0.3s ease-in-out;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.navbar:hover {
+  width: 250px;
+}
+
+.navbar:hover .icons {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.navbar:hover + .main {
+  margin-left: 250px;
+}
+
+.main {
+  margin-left: 100px;
+  padding: 200px 100px 100px 100px;
+}
+
+.mainbaslik {
+  text-align: center;
+}
+
+.icons {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.x {
+  display: flex;
+  align-items: center;
+}
+
+.x span {
+  margin-left: 30px;
+}
+
+.backtotop {
+  margin-top: -1px;
+}
+
+.iconkutu {
+  text-decoration: none;
+  color: white;
+  width: 100%;
+  height: 50px;
+  background-color: #252525;
+}
+
+.iconkutu .x {
+  margin-left: 25px;
+}
+
+.iconkutu:hover {
+  background-color: #555555;
+}
+
+.iconkutu .backtotop {
+  align-items: center;
+}
+
+.playlistcss {
+  margin-top: -105px;
+}
+
+.arkaplan {
+  background-color: #263f4b;
+}
+
+.arkaplaniletisim {
+  background-color: #131313;
+  height: 100vh;
+}
+
+.mainiletisim {
+  margin-left: 100px;
+  padding: 200px 100px 100px 100px;
+}
+
+.form-control {
+  margin-left: 500px;
+  color: white;
+  position: sticky;
+}
+
+.form-control {
+  margin-bottom: 2rem;
+  position: relative;
+}
+.form-control:last-child {
+  margin-bottom: 0;
+}
+.form-control input,
+.form-control textarea {
+  padding: 0.5rem;
+  width: 500px;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid #fff;
+  color: #fff;
+  font-size: 1rem;
+  transition: 300ms all;
+  -webkit-transition: 300ms all;
+  -moz-transition: 300ms all;
+  -ms-transition: 300ms all;
+  -o-transition: 300ms all;
+}
+.form-control input ~ label,
+.form-control textarea ~ label {
+  position: absolute;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+  padding: 0.5rem;
+  transition: 300ms all;
+  -webkit-transition: 300ms all;
+  -moz-transition: 300ms all;
+  -ms-transition: 300ms all;
+  -o-transition: 300ms all;
+}
+
+.form-control input:focus ~ label,
+.form-control textarea:focus ~ label,
+.form-control input:valid ~ label,
+.form-control textarea:valid ~ label {
+  top: -1.5rem;
+  color: red;
+  font-size: 0.8rem;
+}
+.form-control input:focus ~ label,
+.form-control textarea:focus ~ label,
+.form-control input:valid ~ label,
+.form-control textarea:valid ~ label {
+  top: -1.5rem;
+  color: red;
+  font-size: 0.8rem;
+}
+.form-control input[type="submit"] {
+  background-color: red;
+  border: 0;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: 300ms all;
+  -webkit-transition: 300ms all;
+  -moz-transition: 300ms all;
+  -ms-transition: 300ms all;
+  -o-transition: 300ms all;
+  padding: 1rem 0rem;
+}
+.form-control input[type="submit"]:hover {
+  background-color: darkgreen;
+}
+
+.ornekproje {
+  height: 150px;
+  width: 150vh;
+  background-color: #131313;
+  color: white;
+  position: sticky;
+  padding-top: 1px;
+  padding-left: 15px;
+}
+
+.ornekprojeh6 {
+  padding: 0;
+  margin-left: 1330px;
+  margin-top: -60px;
+  font-size: 15px;
+}
+
+.linkegit {
+  margin-left: 97%;
+  margin-top: 100px;
+  padding: 0;
+}
+
+.iletisimlogolar {
+  padding-left: 500px;
+  margin-top: 100px;
+}
+
+.logoyer {
+  margin-left: 70px;
+  float: left;
+}
+
+#ilig:hover {
+  opacity: 0.5;
+}
+
+#ildc:hover {
+  opacity: 0.5;
+}
+
+#ilgh:hover {
+  opacity: 0.5;
+}
